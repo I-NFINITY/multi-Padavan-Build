@@ -22,7 +22,7 @@ env:
   work_dir: /opt/rt-n56u/trunk                                  # 工作目录
   custom_modify: true                                           # 修改文件
   upload_cowtransfer: true                                      # 上传到奶牛快传
-  upload_wetransfer: true                                       # 上传到 WeTransfer
+  upload_wetransfer: false                                       # 上传到 WeTransfer
   src_git: https://github.com/hanwckf/rt-n56u.git               # 源码地址
   config_dir: /opt/rt-n56u/trunk/configs/templates              # 设备模板目录
   toolchain_dir: /opt/rt-n56u/toolchain-mipsel/toolchain-3.4.x  # 工具链目录
@@ -32,6 +32,7 @@ env:
     CONFIG_FIRMWARE_INCLUDE_LANG_CN
     CONFIG_FIRMWARE_ENABLE_IPV6
     CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS
+    CONFIG_FIRMWARE_INCLUDE_HTOP
   DISABLED_CFG: |
     CONFIG_FIRMWARE_INCLUDE_LANG_UK
     CONFIG_FIRMWARE_INCLUDE_TCPDUMP
@@ -43,7 +44,6 @@ env:
     CONFIG_FIRMWARE_INCLUDE_NAPT66
     CONFIG_FIRMWARE_INCLUDE_VLMCSD
     CONFIG_FIRMWARE_INCLUDE_TTYD
-    CONFIG_FIRMWARE_INCLUDE_HTOP
     CONFIG_FIRMWARE_INCLUDE_NANO
     CONFIG_FIRMWARE_INCLUDE_MENTOHUST
     CONFIG_FIRMWARE_INCLUDE_SSSERVER
